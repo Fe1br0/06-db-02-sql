@@ -12,6 +12,10 @@
 
 Приведите получившуюся команду или docker-compose манифест.
 
+```
+docker run --rm --name db_first -e POSTGRES_PASSWORD=12345 -d -p 5434:5432 -v db_main:/var/lib/postgresql/data -v db_bckp:/var/lib/postgresql  postgres:12
+```
+
 ## Задача 2
 
 В БД из задачи 1: 
@@ -34,9 +38,26 @@
 
 Приведите:
 - итоговый список БД после выполнения пунктов выше,
+
+![2-1](https://user-images.githubusercontent.com/106814458/196817244-947e2f2e-310a-42bf-8911-49461c155243.jpg)
+
+
 - описание таблиц (describe)
+
+![2-2](https://user-images.githubusercontent.com/106814458/196817270-f4b03433-b761-4441-84a6-784fc1a266ca.jpg)
+
+
+
 - SQL-запрос для выдачи списка пользователей с правами над таблицами test_db
 - список пользователей с правами над таблицами test_db
+
+```
+select * from information_schema.table_privileges tp where grantee like 'test%'
+```
+![image](https://user-images.githubusercontent.com/106814458/196817398-a677cc4e-4878-4c64-a39f-6f12507b0bad.png)
+
+
+
 
 ## Задача 3
 
