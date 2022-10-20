@@ -71,7 +71,7 @@ select * from information_schema.table_privileges tp where grantee like 'test%'
 C помощью команды docker exec -ti db_first bash  провалился в "основную БД" 
 сделал бекап по команде pg_dump -U postgres test_db -f /var/lib/postgresql/data/bd_bckp.sql
 
-Далее docker exec -ti db_second bash зашел на вторую и использовал psql -U postgres; -d test_db -f /var/lib/postgresql/data/bd_bckp.sql
+
 ```
 
 ![2-7](https://user-images.githubusercontent.com/106814458/197024400-6905631e-a531-4fbf-9ba2-01c7b60c94e7.jpg)
