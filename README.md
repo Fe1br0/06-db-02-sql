@@ -73,27 +73,11 @@ C помощью команды docker exec -ti db_first bash  провалил�
 
 Далее в новом контейнере :
 root@08b220910fcc:/# psql -U postgres -d test_db -f /var/lib/postgresql/bd_bckp.sql
-SET
-SET
-SET
-SET
-SET
- set_config 
-------------
- 
-(1 row)
 
-SET
-SET
-SET
-SET
-root@08b220910fcc:/# 
 
 
 ```
 
-![2-7](https://user-images.githubusercontent.com/106814458/197024400-6905631e-a531-4fbf-9ba2-01c7b60c94e7.jpg)
-```
-"основная БД" была на порту 5434 
-``` 
+
+
 
