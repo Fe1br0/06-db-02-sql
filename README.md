@@ -44,7 +44,8 @@ docker run --rm --name db_first -e POSTGRES_PASSWORD=12345 -d -p 5434:5432 -v db
 
 - описание таблиц (describe)
 
-![2-2](https://user-images.githubusercontent.com/106814458/196817270-f4b03433-b761-4441-84a6-784fc1a266ca.jpg)
+
+![2-3](https://user-images.githubusercontent.com/106814458/197016662-f348c8ee-d1e6-4386-8f23-c0117673e705.jpg)
 
 
 
